@@ -5,6 +5,7 @@ from flask_cors import CORS
 import random
 
 app = Flask(__name__)
+CORS(app)
 
 # In-memory storage for the number to guess
 game_data = {
